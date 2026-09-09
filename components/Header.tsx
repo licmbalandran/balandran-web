@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import MobileNav from "./MobileNav";
 
 const links = [
   { href: "/nosotros", label: "Nosotros" },
@@ -41,6 +42,7 @@ export default function Header() {
             Agendar consulta
           </Link>
         </div>
+        <MobileNav />
       </div>
     </header>
   );
