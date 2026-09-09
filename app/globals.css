@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F5F4F2;
+  color: #1A1A1A;
+}
+
+.expediente-tag {
+  @apply font-mono text-[11px] uppercase tracking-expediente text-acero;
+}
+
+.hairline {
+  border-color: #D9D7D3;
+}
+
+::selection {
+  background-color: #1A1A1A;
+  color: #F5F4F2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #1A1A1A;
+  outline-offset: 3px;
+}
